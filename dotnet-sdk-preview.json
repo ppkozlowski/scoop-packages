@@ -1,0 +1,42 @@
+{
+    "version": "6.0.0-preview.5.21301.5",
+    "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
+    "homepage": "https://www.microsoft.com/net/",
+    "license": "MIT",
+    "suggest": {
+        "Visual C++ Redistributable 2019": "extras/vcredist2019"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://download.visualstudio.microsoft.com/download/pr/74448616-c6d2-40bf-b6da-aa3a6c1009ab/62702150054089e2961aaf32e8ab3ffc/dotnet-sdk-6.0.100-preview.5.21302.13-win-x64.zip",
+            "hash": "sha512:c86591883a75ac6cf4eab0043e5dc70014c16f23bb6f9aedce74480f59c9afb1e410008440ea2bd6ae5e4c3a4ca337a0a58c8e429bb5b814395b7cdd78cf551d"
+        },
+        "32bit": {
+            "url": "https://download.visualstudio.microsoft.com/download/pr/20360038-1b6c-4e4c-ab83-d4cc063722e6/817ea1b688c76f90e70deb428830ffbc/dotnet-sdk-6.0.100-preview.5.21302.13-win-x86.zip",
+            "hash": "sha512:229f165357abf44ad322295e31f620af191a071736e472084acaf4e8f48ac7b11334213b677b34e09a0e2f7670e9f2ba8f3254e9a42588efad37d15e73398ad1"
+        }
+    },
+    "bin": "dotnet.exe",
+    "env_add_path": ".",
+    "env_set": {
+        "DOTNET_ROOT": "$dir",
+        "MSBuildSDKsPath": "$dir\\sdk\\$version\\Sdks"
+    },
+    "checkver": {
+        "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
+        "regex": "(?s)(?<rtv>[\\d.]+)[^\\d]*?([\\d.]+)[^\\d]*?(?:preview)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x64.zip"
+            },
+            "32bit": {
+                "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x86.zip"
+            }
+        },
+        "hash": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$matchRtv-sha.txt"
+        }
+    }
+}
