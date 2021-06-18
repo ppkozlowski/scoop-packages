@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.visualstudio.microsoft.com/download/pr/74448616-c6d2-40bf-b6da-aa3a6c1009ab/62702150054089e2961aaf32e8ab3ffc/dotnet-sdk-6.0.100-preview.5.21302.13-win-x64.zip",
-            "hash": "sha512:c86591883a75ac6cf4eab0043e5dc70014c16f23bb6f9aedce74480f59c9afb1e410008440ea2bd6ae5e4c3a4ca337a0a58c8e429bb5b814395b7cdd78cf551d"
+            "hash": "sha512:f76c48cc6b9a614b75ba323fd489b9750bb7f2baafe63bedd5f0798feb90bc928e8d4f61f4502b51702f1a1b0ce8824809ec72059f7dbc933ff1b27aab8c2fa4"
         },
         "32bit": {
             "url": "https://download.visualstudio.microsoft.com/download/pr/20360038-1b6c-4e4c-ab83-d4cc063722e6/817ea1b688c76f90e70deb428830ffbc/dotnet-sdk-6.0.100-preview.5.21302.13-win-x86.zip",
